@@ -1,0 +1,52 @@
+.header-middle {
+  padding: 15px 0;
+  background-color: white;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo__link {
+  font-size: 44px;
+  font-weight: 900;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--accent-color);
+  transition: color 0.2s ease-out;
+
+  @media (max-width: 575px) {
+    font-size: 32px;
+  }
+
+  span {
+    color: var(--contrast-color);
+    transition: color 0.2s ease-out;
+  }
+
+  &:hover {
+    color: var(--contrast-color);
+
+    span {
+      color: var(--accent-color);
+    }
+  }
+}
+
+.header-search {
+  height: 38px;
+}
+
+.header-cart-favor {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+
+  .btn {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+  }
+}

@@ -1,0 +1,58 @@
+.header-top {
+  padding: 8px;
+}
+
+.header-top-phone__wrapper {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 100%;
+
+  .header-top-phone {
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+
+    a {
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+ul.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 100%;
+
+  a {
+    background-color: var(--accent-color);
+    color: var(--contrast-color);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    float: left;
+    text-align: center;
+    line-height: 30px;
+
+    transition: background-color 0.2s ease-out, color 0.2s ease-out;
+
+    &:hover {
+      background-color: var(--contrast-color);
+      color: var(--accent-color);
+    }
+  }
+}
+
+.header-top_button {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+  height: 100%;
+}

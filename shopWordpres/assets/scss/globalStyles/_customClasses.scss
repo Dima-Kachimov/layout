@@ -1,0 +1,32 @@
+.btn,
+.dropdown-menu,
+.form-control {
+  border-radius: 0;
+}
+
+.btn-warning {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+}
+
+.btn-outline-warning {
+  border-color: var(--accent-color);
+
+  &:hover {
+    background-color: var(--accent-color);
+    color: var(--contrast-color);
+  }
+}
+.form-control {
+  box-shadow: none;
+
+  &:focus {
+    color: var(--text-color);
+    border-color: var(--accent-color);
+    box-shadow: none;
+  }
+
+  &::placeholder {
+    color: var(--gray-color);
+  }
+}
